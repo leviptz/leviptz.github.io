@@ -1,9 +1,9 @@
-#Levi's Portfolio Website
+# Levi's Portfolio Website
 
-##Description
+## Description
 This is my personal portfolio website
 
-##Technologies
-*HTML
-*CSS
-*JS
+## Technologies
+* HTML
+* CSS
+* JS
