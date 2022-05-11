@@ -67,6 +67,7 @@ header {
 }
 
 header h4 {
+    font-weight: 500;
     margin-left: 10px;
 }
 nav {
@@ -88,12 +89,12 @@ nav ul li {
     margin-left: 15%;
 }
 
-
   /* Main */
 
 main {
     margin-top: 60px
 }
+
 /* Media Section */
 
 @media screen and (max-width: 760px) {
