@@ -9,6 +9,39 @@ body {
     color: white;
 }
 
+/* Link */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a.left
+{
+    position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+}
+
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+
+/* Header */
+
 header {
     background-color: rgb(26, 27, 30);
     width: 100%;
@@ -55,33 +88,8 @@ nav ul li {
     margin-left: 15%;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
 
-a.left
-{
-    position: relative;
-}
-
-a.left:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  visibility: hidden;
-  transition: all 0.25s ease-in-out;
-}
-
-
-a.left:hover:before {
-    visibility: visible;
-    width: 100%;
-  }
+  /* Main */
 
 main {
     margin-top: 60px
