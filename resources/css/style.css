@@ -97,11 +97,7 @@ main {
 /* Media Section */
 
 @media screen and (max-width: 760px) {
-    #profilpic {
-      display: none;
-    }
-    
     header h4 {
-        margin-left: 15px;
+      display: none;
     }
   }
