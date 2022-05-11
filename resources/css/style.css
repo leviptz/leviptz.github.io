@@ -83,6 +83,9 @@ a.left:hover:before {
     width: 100%;
   }
 
+main {
+    margin-top: 60px
+}
 /* Media Section */
 
 @media screen and (max-width: 760px) {
