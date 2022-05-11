@@ -4,10 +4,93 @@
 }
 
 body {
-    font-style: RedHatMono;
+    font-family: RedHatMono;
+    background-color: rgb(20, 21, 23);
+    color: white;
+}
+
+header {
+    background-color: rgb(26, 27, 30);
+    width: 100%;
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+}
+
+#profilpic {
+    display: flex;
+    align-items: center;
 }
 
 #profilpic img {
-    width: 50px;
+    width: 32px;
     border-radius: 100%;
+    border: 2px solid white;
+    margin-left: 15px;
 }
+
+header h4 {
+    margin-left: 10px;
+}
+nav {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-right: 5%;
+}
+
+nav ul {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 15%;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+a.left
+{
+    position: relative;
+}
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+}
+
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+/* Media Section */
+
+@media screen and (max-width: 760px) {
+    #profilpic {
+      display: none;
+    }
+    
+    header h4 {
+        margin-left: 15px;
+    }
+  }
