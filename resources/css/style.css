@@ -62,7 +62,7 @@ header {
 #profilpic img {
     width: 32px;
     border-radius: 100%;
-    border: 2px solid white;
+    border: 2px solid #6df0c2;
     margin-left: 15px;
 }
 
@@ -70,6 +70,7 @@ header h4 {
     font-weight: 500;
     margin-left: 10px;
 }
+
 nav {
     display: flex;
     justify-content: end;
@@ -95,10 +96,35 @@ main {
     margin-top: 60px
 }
 
+#welcome {
+    width: 100%;
+    height: 700px;
+    background-image: url(/resources/images/welcome_background.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome h1 {
+    font-size: 3.5rem;
+    color: rgb(20, 21, 23);
+}
+
 /* Media Section */
 
-@media screen and (max-width: 760px) {
+  @media screen and (max-width: 1000px) {
+    #welcome h1 { 
+      font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
     header h4 {
       display: none;
     }
+    #welcome h1 { 
+        font-size: 2rem;
+      }
   }
