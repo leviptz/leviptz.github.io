@@ -117,6 +117,72 @@ nav ul li {
     text-align: center;
 }
 
+h2 {
+  font-size: 2.2rem;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 0.1fr 0.3fr 0.5fr 0.7fr;
+  width: 100%;
+}
+
+#about h2 {
+  text-align: center;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#about p {
+grid-column: 2 / span 1;
+grid-row: 2 / span 1;
+}
+
+#stickmebuttondiv {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stickme {
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stickmeborder {
+  border: 3px dotted #6df0c2;
+  border-radius: 20%;
+}
+
+#stickmeimage {
+  margin-top: 15px;
+  margin-left: 50px;
+  visibility: hidden;
+}
+
+.button {
+  width: 150px;
+  text-align: center;
+  border: 2px solid #6df0c2;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.button:hover {
+  background-color: rgb(26, 27, 30);
+
+}
+
+.button:active {
+  color: #6df0c2;
+}
 /* Media Section */
 
   @media screen and (max-width: 1100px) {
