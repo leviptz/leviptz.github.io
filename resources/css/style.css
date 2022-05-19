@@ -109,6 +109,7 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 #welcome h1 {
@@ -131,7 +132,6 @@ h2 {
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 0.1fr 0.3fr 0.5fr 0.7fr;
   width: 100%;
-  margin-top: 50px;
   min-width: fit-content;
 }
 
@@ -198,9 +198,28 @@ grid-row: 2 / span 1;
 }
 
   /* Links */
+#links {
+  margin-bottom: 80px;
+}
 
+  /* Footer */
 
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 
+  footer p {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 5px 20px;
+  }
 /* Media Section */
 
   @media screen and (max-width: 1100px) {
